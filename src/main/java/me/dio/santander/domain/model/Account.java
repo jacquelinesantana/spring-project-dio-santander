@@ -20,12 +20,12 @@ public class Account {
 	
 	private String agency;
 	
-	@Column( scale= 13, precision = 2)
-	private BigDecimal balance;
+	
+	private Float balance;
 	
 	//não aceita valor nulo, aceita até 13 digitos sendo 2 casa decimal
-	@Column(name = "additional_limit",nullable= false, scale= 13, precision = 2)
-	private BigDecimal limit;
+	@Column(name = "additional_limit",nullable= false )
+	private Float limit;
 	
 	public Long getId() {
 		return id;
@@ -45,16 +45,17 @@ public class Account {
 	public void setAgency(String agency) {
 		this.agency = agency;
 	}
-	public BigDecimal getBalance() {
+	public Float getBalance() {
 		return balance;
 	}
-	public void setBalance(BigDecimal balance) {
+	public void setBalance(Float balance) {
 		this.balance = balance;
 	}
-	public BigDecimal getLimit() {
+	public Float getLimit() {
 		return limit;
 	}
-	public void setLimit(BigDecimal limit) {
+	public void setLimit(Float limit) {
 		this.limit = limit;
 	}
+	
 }

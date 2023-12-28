@@ -2,13 +2,31 @@ package me.dio.santander.domain.model;
 
 import java.math.BigDecimal;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity(name = "tb_account")
 public class Account {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
+	@Column(unique = true)
 	private String number;
+	
 	private String agency;
+	
+	@Column( scale= 13, precision = 2)
 	private BigDecimal balance;
+	
+	//não aceita valor nulo, aceita até 13 digitos sendo 2 casa decimal
+	@Column(nullable= false, scale= 13, precision = 2)
 	private BigDecimal limit;
+	
 	public Long getId() {
 		return id;
 	}

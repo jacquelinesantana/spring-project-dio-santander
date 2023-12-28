@@ -24,7 +24,7 @@ public class Account {
 	private BigDecimal balance;
 	
 	//não aceita valor nulo, aceita até 13 digitos sendo 2 casa decimal
-	@Column(nullable= false, scale= 13, precision = 2)
+	@Column(name = "additional_limit",nullable= false, scale= 13, precision = 2)
 	private BigDecimal limit;
 	
 	public Long getId() {

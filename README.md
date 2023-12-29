@@ -44,10 +44,11 @@ classDiagram
 ```
 ## Desenvolvimento em etapas
 Para melhor entender a evolução desse projeto você pode comparar as diferentes branchs aqui nesse repositório
-model - [https://github.com/jacquelinesantana/spring-project-dio-santander/tree/model](link)
-models-melhoradas - [https://github.com/jacquelinesantana/spring-project-dio-santander/tree/models-melhoradas](link)
-repository - [https://github.com/jacquelinesantana/spring-project-dio-santander/tree/repository](link)
-configuracao-com-yml - [https://github.com/jacquelinesantana/spring-project-dio-santander/edit/configuracao-com-yml/](link)
+1. model - [https://github.com/jacquelinesantana/spring-project-dio-santander/tree/model](link)
+2. models-melhoradas - [https://github.com/jacquelinesantana/spring-project-dio-santander/tree/models-melhoradas](link)
+3. repository - [https://github.com/jacquelinesantana/spring-project-dio-santander/tree/repository](link)
+4. configuracao-com-yml - [https://github.com/jacquelinesantana/spring-project-dio-santander/edit/configuracao-com-yml/](link)
+
 ## Configurações para conectar com o H2
 Para esse projeto em localhost vamos utilizar o banco de dados em memória H2
 Para isso criamos um arquivo YML chamado application-dev.yml com a seguinte estrutura de código:

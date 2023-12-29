@@ -18,7 +18,7 @@ public class Card {
 	
 	//não aceita valor nulo, aceita até 13 digitos sendo 2 casa decimal
 	@Column(name = "additional_limit",nullable= false )
-	private Double limit;
+	private Double limit; 
 	
 	public Long getId() {
 		return id;

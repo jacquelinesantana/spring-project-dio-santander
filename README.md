@@ -44,7 +44,7 @@ classDiagram
 ```
 ## Desenvolvimento em etapas
 Para melhor entender a evolução desse projeto você pode comparar as diferentes branchs aqui nesse repositório
-1. model - [link]([https://github.com/jacquelinesantana/spring-project-dio-santander/tree/model)
+1. model - [link](https://github.com/jacquelinesantana/spring-project-dio-santander/tree/model)
 2. models-melhoradas - [link](https://github.com/jacquelinesantana/spring-project-dio-santander/tree/models-melhoradas)
 3. repository - [link](https://github.com/jacquelinesantana/spring-project-dio-santander/tree/repository)
 4. configuracao-com-yml - [link](https://github.com/jacquelinesantana/spring-project-dio-santander/edit/configuracao-com-yml/)

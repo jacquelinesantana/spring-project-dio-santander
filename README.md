@@ -1,4 +1,5 @@
 # Spring project Dio Santander Week 2023
+
 Projeto desenvolvido para colocar em prática habilidades em projeto em Linguagem Java com Springboot.
 A seguir vamos poder ver o diagrama de classes feito com recurso grafico mermaid e ChatGPT, onde informamos as classes em formato json para a IA criar o diagrama em formato Mermaid. Mais informações em: https://mermaid.js.org/
 
@@ -41,6 +42,15 @@ classDiagram
   User "1" *-- "1" Card
   User "1" *-- "N" News
 ```
+## Desenvolvimento em etapas
+Para melhor entender a evolução desse projeto você pode comparar as diferentes branchs aqui nesse repositório
+1. model - [link](https://github.com/jacquelinesantana/spring-project-dio-santander/tree/model)
+2. models-melhoradas - [link](https://github.com/jacquelinesantana/spring-project-dio-santander/tree/models-melhoradas)
+3. repository - [link](https://github.com/jacquelinesantana/spring-project-dio-santander/tree/repository)
+4. configuracao-com-yml - [link](https://github.com/jacquelinesantana/spring-project-dio-santander/edit/configuracao-com-yml/)
+5. service - [link](https://github.com/jacquelinesantana/spring-project-dio-santander/tree/service)
+6. controller - [link](https://github.com/jacquelinesantana/spring-project-dio-santander/tree/controller)
+
 ## Configurações para conectar com o H2
 Para esse projeto em localhost vamos utilizar o banco de dados em memória H2
 Para isso criamos um arquivo YML chamado application-dev.yml com a seguinte estrutura de código:

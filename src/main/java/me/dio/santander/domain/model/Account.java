@@ -13,7 +13,7 @@ public class Account {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long idCount;
 	
 	@Column(unique = true)
 	private String number;
@@ -24,15 +24,16 @@ public class Account {
 	private Float balance;
 	
 	//não aceita valor nulo, aceita até 13 digitos sendo 2 casa decimal
-	@Column(name = "additional_limit",nullable= false  )
+	@Column(name = "additional_limit",nullable= false )
 	private Float limit;
 	
 	
-	public Long getId() {
-		return id;
+	
+	public Long getIdCount() {
+		return idCount;
 	}
-	public void setId(Long id) {
-		this.id = id;
+	public void setIdCount(Long idCount) {
+		this.idCount = idCount;
 	}
 	public String getNumber() {
 		return number;

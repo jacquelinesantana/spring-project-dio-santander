@@ -11,7 +11,7 @@ public class Card {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long idCard;
 	
 	@Column(unique = true)
 	private String number;
@@ -20,11 +20,12 @@ public class Card {
 	@Column(name = "additional_limit",nullable= false )
 	private Double limit; 
 	
-	public Long getId() {
-		return id;
+	
+	public Long getIdCard() {
+		return idCard;
 	}
-	public void setId(Long id) {
-		this.id = id;
+	public void setIdCard(Long idCard) {
+		this.idCard = idCard;
 	}
 	public String getNumber() {
 		return number;

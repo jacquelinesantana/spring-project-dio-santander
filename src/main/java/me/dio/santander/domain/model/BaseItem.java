@@ -13,15 +13,16 @@ import jakarta.persistence.MappedSuperclass;
 public abstract class BaseItem {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long idDados;
 	private String icon;
 	private String description;
 	
-	public Long getId() {
-		return id;
+	
+	public Long getIdDados() {
+		return idDados;
 	}
-	public void setId(Long id) {
-		this.id = id;
+	public void setIdDados(Long idDados) {
+		this.idDados = idDados;
 	}
 	public String getIcon() {
 		return icon;

@@ -126,21 +126,21 @@ OBS2: note que o arquivo tem nome de várias variáveis tais como PGHOST, PGPORT
 
 1. vá até o menu Run, opção run configurations
 2. aqui vamos duplicar a opção do projeto que fizemos o run para a configuração dev agora para o prod:
-![Imagem da configuração duplicando o executável do projeto](img\ide-duplicar-config-run.png)
+![Imagem da configuração duplicando o executável do projeto](img/ide-duplicar-config-run.png)
 3. adicione as variáveis de ambiente clicando na guia Environment botão add. não esqueça de remover a variável já existente da configuração de conexão local com h2.
 4. o resultado esperado é conforme o print a seguir:
 5. para a informação SPRING_PROFILES_ACTIVE o valor será: **prod**
 6. todos os valores das demais variáveis devem ser preenchidas conforme os dados do seu banco de dados:
 
-![configuração variáveis na ide Eclipse](img\configuracao-variaveis-na-ide.png)
+![configuração variáveis na ide Eclipse](img/configuracao-variaveis-na-ide.png)
 
-![Dados variáveis ambiente postgree no  Railway](img\img-dados-variaveis-ambiente-postgree.JPG)
+![Dados variáveis ambiente postgree no  Railway](img/img-dados-variaveis-ambiente-postgree.JPG)
 
-![como ver os dados das variáveis](img\ver-dados-das-variaveis.png)
+![como ver os dados das variáveis](img/ver-dados-das-variaveis.png)
 
 Perfeito, feito isso já se pode **executar o projeto** e **ver o banco de dados ser formado no host da Railway,** clique na guia Data:
 
-![banco dados em nuvem com tabelas](img\banco-dados-nuvem-com-tabelas.JPG)
+![banco dados em nuvem com tabelas](img/banco-dados-nuvem-com-tabelas.JPG)
 
 Uma vez com a estrutura do banco e tabelas feita, podemos alterar a ultima linha do arquivo application-prod.yml e deixar da seguinte forma:
 

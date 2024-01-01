@@ -147,4 +147,31 @@ Uma vez com a estrutura do banco e tabelas feita, podemos alterar a ultima linha
 ```
 ddl-auto: validate
 ```
+### Deploy do projeto
+
+Para o deploy do projeto também vamos realizar alguns ajustes rápidos:
+
+1. criar um arquivo com nome Procfile com as instruções, web e endereço do arquivo .jar
+
+```
+web: java -jar build/libs/me.dio-0.0.1-SNAPSHOT.jar
+```
+
+
+
+2. alterar o arquivo build.gradle adicionando as instruções a seguir:
+
+```
+tasks.jar{
+	manifest{
+		attributes["Main-Class"] = "me.dio.santander.Application" //endereço do application do projeto
+	}
+}
+```
+
+3. alterar a versão do gradle no arquivo gradle-wrapper.properties que fica dentro do pasta gradle/wrapper
+
+```
+distributionUrl=https\://services.gradle.org/distributions/gradle-7.6.1-bin.zip
+```
 

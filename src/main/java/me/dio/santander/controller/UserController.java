@@ -1,6 +1,7 @@
 package me.dio.santander.controller;
 
 import java.net.URI;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -17,6 +18,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import me.dio.santander.domain.model.User;
 import me.dio.santander.service.UserService;
+
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/users")

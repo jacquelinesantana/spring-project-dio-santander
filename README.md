@@ -50,6 +50,8 @@ Para melhor entender a evolução desse projeto você pode comparar as diferente
 4. configuracao-com-yml - [link](https://github.com/jacquelinesantana/spring-project-dio-santander/edit/configuracao-com-yml/)
 5. service - [link](https://github.com/jacquelinesantana/spring-project-dio-santander/tree/service)
 6. controller - [link](https://github.com/jacquelinesantana/spring-project-dio-santander/tree/controller)
+7. deploy-banco - [link](https://github.com/jacquelinesantana/spring-project-dio-santander/tree/deploy-banco)
+8. deploy-projeto - [link](https://github.com/jacquelinesantana/spring-project-dio-santander/tree/deploy-projeto)
 
 ## Configurações para conectar com o H2
 Para esse projeto em localhost vamos utilizar o banco de dados em memória H2
@@ -175,3 +177,9 @@ tasks.jar{
 distributionUrl=https\://services.gradle.org/distributions/gradle-7.6.1-bin.zip
 ```
 
+Feito isso no Railway você vai clicar em:
+
++ New
++ github repo
++ selecionar o repositório que deseja fazer deploy
++ aguardar o processo de building
